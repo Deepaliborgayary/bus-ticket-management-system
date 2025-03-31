@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Wallmar Bus Service</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="search-box">
+                <h2>Book Your Bus Tickets</h2>
+                <form id="searchForm" action="booking.html">
+                    <div class="form-group">
+                        <label for="from">From:</label>
+                        <select id="from" name="from" required>
+                            <option value="">Select City</option>
+                            <option value="Kokrajhar">Kokrajhar</option>
+                            <option value="Guwahati">Guwahati</option>
+                            <option value="Tezpur">Tezpur</option>
+                            <option value="Duliajan">Duliajan</option>
+			    <option value="Lakhimpur">Lakimpur</option>
+			    <option value="Dibrughar">Dibrughar</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="to">To:</label>
+                        <select id="to" name="to" required>
+                            <option value="">Select City</option>
+                            <option value="Kokrajhar">Kokrajhar</option>
+                            <option value="Guwahati">Guwahati</option>
+                            <option value="Tezpur">Tezpur</option>
+                            <option value="Duliajan">Duliajan</option>
+			    <option value="Lakhimpur">Lakimpur</option>
+			    <option value="Dibrughar">Dibrughar</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Travel Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <button type="submit" class="btn">Search Buses</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Wallmar Bus Services. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
